@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-// import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Cart from './components/Cart';
 import Home from './components/Home';
@@ -15,6 +15,7 @@ function App() {
       <Route path="/cart" exact element={<Cart/>}/>
       <Route path="/notfound" exact element={<NotFound/>}/>
       <Route path="/" exact  element={<Home/>}/>
+      {/* <Navigate to='notfound'/> */}
       </Routes>
       </BrowserRouter>
 
